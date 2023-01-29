@@ -1,28 +1,159 @@
 /*
     folha de estilo 1
 */
+/* CSS reset */
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+
+
+/* Layout */
+.Conteiner{
+    margin: 0 auto;
+}
+
+.Flex{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+/* top */
+#topo{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+#topo img{
+    height: 50px; 
+    width: 50px;
+}
+
+
 /*Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+header{
+    height: 60px;
+}
+
+#logo img{
+    width: 128px;
+    height: 128px;
+}
+
+
+label{
+    font-size: 3em;
+    padding-right: 15px;
+}
+
+
+#check{
+    display: none;
+}
+
+
+nav ul{
+    list-style: none;
+    background-color: #343538;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 20%;
+    transition: all 0.5s;
+}
+
+#check:checked ~ ul{
+    right: 0;
+}
+
+nav ul li{
+    padding: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
 /*Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 576px){
-    body{
-        background-color: aqua;
+    /* Layout */
+    .Conteiner{
+        max-width: 540px;
     }
 }
 /*Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 768px){
-    body{
-        background-color: yellow;
+    /* Layout */
+    .Conteiner{
+        max-width: 720px;
     }
 }
 /*tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 992px){
-    body{
-        background-color: orangered;
-    } 
+    /* Layout */
+    .Conteiner{
+        max-width: 960px;
+    }
 }
 /*PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 1200px){
-    body{
-        background-color: red;
+    /* Layout */
+    .Conteiner{
+        max-width: 1140px;
     }
+    /* cabeçalho */
+
+    header{
+        height: 120px;
+    }
+    #logo img{
+        width: 190px;
+        height: 190px;
+        margin-top: 30px;
+    }
+
+    label{
+        display: none;
+    }
+
+    nav ul{
+        position: static;
+        height: auto;
+        background-color: transparent;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    nav ul li{
+        float: left;
+    }
+
+    nav ul li a{
+        color: #343538
+    }
+
+    nav ul li a:hover{
+        color: #c00000;
+        cursor: pointer;
+    }
+
 }
