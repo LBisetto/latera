@@ -26,6 +26,17 @@ body{
     margin: 0 auto;
 }
 
+
+/* .FlexL{
+    margin-left: 20vh;
+    flex-direction: row;
+}
+
+.FlexR{
+    margin-right: 20vh;
+    flex-direction: row-reverse;
+} */
+
 .Flex{
     display: flex;
     justify-content: space-between;
@@ -35,7 +46,15 @@ body{
 .Flex2{
     display: flex;
     align-items: center;
+
 }
+
+.Flex3{
+    display: flex;
+    flex-direction: column;
+
+}
+
 
 .Botao{
     text-decoration: none;
@@ -75,7 +94,10 @@ header{
 
 label{
     font-size: 3em;
-    padding-right: 15px;
+    position: fixed;
+    top: 5px;
+    right: 15px;
+    color: rgba(0,0,0,0.5);
 }
 
 
@@ -92,7 +114,7 @@ nav ul{
     position: fixed;
     top: 60px;
     right: -100%;
-    width: 20%;
+    width: 30%;
     transition: all 0.5s;
 }
 
@@ -121,6 +143,7 @@ main{
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    border: 5px solid #000;
 
 }
 
@@ -142,8 +165,12 @@ main h2{
     background: url(img/banner3.jpg);
     background-position: center;
     background-size: cover;
+    border: 5px solid #000;
+    position: relative;
+    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0)),linear-gradient(to left, rgba(0,0,0,0.7), rgba(0,0,0,0)) ;
+}  
 
-}   
+
 
 #destaqueSobre{
     display: none;
@@ -168,6 +195,29 @@ main h2{
     margin-right: 10px;
 }
 
+
+/* onePage */
+#onepage{
+    padding: 50px 10px;
+}
+
+
+#onepage h2{
+    margin-bottom: 10px;
+}
+
+#onepage p{
+    margin-bottom: 25px;
+    text-shadow: #000 0.03em 0.03em 0.1em;
+}
+
+#video iframe{
+    width: 340px;
+    height: 191px;
+    margin-left: 20px;
+    border: 0;
+}
+
 /*Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 576px){
     /* Layout */
@@ -180,7 +230,12 @@ main h1, main h2{
     text-shadow: #000 0.15em 0.15em 0.10em;
 }
 
+/* one page */
 
+#video iframe{
+    width: 560px;
+    height: 315px;
+}
 
 }
 /*Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -276,5 +331,11 @@ main{
         background-attachment: fixed;
     }
 
+    /* one page */
+
+    .Flex3{
+        flex-direction: row;
+        align-items: center;
+    }
 
 }
