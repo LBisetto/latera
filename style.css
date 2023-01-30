@@ -69,6 +69,12 @@ body{
     flex-direction: column-reverse;
 }
 
+.Flex6{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
 .Botao{
     text-decoration: none;
     color:  #fff;
@@ -78,8 +84,33 @@ body{
     padding: 10px 40px;
     border: 2px solid #fff;
     border-radius: 25px;
+    
 }
 
+
+.botao1{
+    text-decoration: none;
+    background-color: #66bbff;
+    padding: 5px 10px 5px 10px;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
+
+.botao2{
+    text-decoration: none;
+    background-color: #ff0000;
+    padding: 5px 10px 5px 10px;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
 
 /* top */
 #topo{
@@ -147,30 +178,6 @@ label{
 
 #check{
     display: none;
-}
-
-.botao1{
-    text-decoration: none;
-    background-color: #66bbff;
-    padding: 5px 10px 5px 10px;
-    color: #fff;
-    font-size: 1.2em;
-    font-weight: 700;
-    border-radius: 5px;
-    border: 0;
-    cursor: pointer;
-}
-
-.botao2{
-    text-decoration: none;
-    background-color: #ff0000;
-    padding: 5px 10px 5px 10px;
-    color: #fff;
-    font-size: 1.2em;
-    font-weight: 700;
-    border-radius: 5px;
-    border: 0;
-    cursor: pointer;
 }
 
 
@@ -317,6 +324,11 @@ main h2{
     color: #ff0000;
     font-weight: 700;
 
+}
+
+.textoWireBotao li{
+    margin-bottom: 30px;
+    list-style: none;
 }
 
 #down{
