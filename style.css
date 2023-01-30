@@ -55,6 +55,11 @@ body{
 
 }
 
+.Flex4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 
 .Botao{
     text-decoration: none;
@@ -79,6 +84,37 @@ body{
     width: 50px;
 }
 
+/* cards */
+
+.Card{
+    margin-top: 25px;
+    width: 338px;
+    height: 700px;
+    background: #e8e8ee;
+    border:  1px solid #a1a1a1;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.Card img{
+    height: 264px;
+    width: 338px;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.Card h3{
+    margin-top: 15px;
+}
+
+.Card p {
+    text-align: left;
+    color: #434343;
+    padding: 10px 30px 50px 30px;
+}
+
+.Card a{
+    padding: 10px 100px;
+}
 
 /*Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
@@ -105,6 +141,29 @@ label{
     display: none;
 }
 
+.botao1{
+    text-decoration: none;
+    background-color: #66bbff;
+    padding: 5px 10px 5px 10px;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
+
+.botao2{
+    text-decoration: none;
+    background-color: #ff0000;
+    padding: 5px 10px 5px 10px;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
 
 
 nav ul{
@@ -124,6 +183,10 @@ nav ul{
 
 nav ul li{
     padding: 20px;
+}
+
+.botaoS{
+    padding-right: 0px;
 }
 
 nav ul li a{
@@ -162,12 +225,11 @@ main h2{
 
 #sobre{
     padding: 50px 0px;
-    background: url(img/banner3.jpg);
+    /* background: url(img/banner3.jpg); */
+    background-color: #5e5e5e;
     background-position: center;
     background-size: cover;
-    border: 5px solid #000;
-    position: relative;
-    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0)),linear-gradient(to left, rgba(0,0,0,0.7), rgba(0,0,0,0)) ;
+    border: 1px solid #000;
 }  
 
 
@@ -215,7 +277,63 @@ main h2{
     width: 340px;
     height: 191px;
     margin-left: 20px;
-    border: 0;
+    border: 5px solid #5e5e5e;
+    box-shadow: #000 0.09em 0.09em 0.15em;
+    
+}
+
+/* wireframe */
+#wireframe{
+    padding: 50px;
+    background: url(img/banner3C.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#textoWire{
+    color: #fff;
+    padding: 0px 10px;
+}
+
+#textoWire h2{
+    margin-bottom: 10px;
+    text-shadow: #000 0.08em 0.08em 0.1em;
+}
+
+#textoWire p{
+    margin-bottom: 50px;
+    text-shadow: #000 0.08em 0.08em 0.1em;
+}
+
+#textoWire span{
+    color: #ff0000;
+    font-weight: 700;
+
+}
+
+#down{
+    display: none;
+}
+
+#conteudo{
+    padding: 50px 0px;
+}
+
+#conteudo h2{
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#todos{
+    margin-top: 50px;
+    text-align: center;
+}
+
+#todos a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 1.25em;
 }
 
 /*Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -337,5 +455,27 @@ main{
         flex-direction: row;
         align-items: center;
     }
+
+    /* download */
+    #wireframe{
+        background-attachment: fixed;
+        
+    }
+
+    #textoWire span{
+        color: #fff;
+    
+    }
+
+    #down{
+        display: inline;
+    }
+
+    #down img{
+        margin-left: 10vh;
+        width: 255px;
+        height: 255px;
+    }
+
 
 }
