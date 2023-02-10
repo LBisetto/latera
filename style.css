@@ -87,6 +87,24 @@ body{
     justify-content: flex-start;
 }
 
+.Flex7{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.Flex8{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+
+
 .Botao{
     text-decoration: none;
     color:  #fff;
@@ -110,6 +128,7 @@ body{
     border-radius: 5px;
     border: 0;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 .botao2{
@@ -124,13 +143,48 @@ body{
     cursor: pointer;
 }
 
+.caixa1{
+    width: 370px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #66bbff;
+    border-radius: 5px;
+}
+
+
 /* top */
 #topo{
     position: fixed;
     right: 10px;
     bottom: 10px;
+    
 }
 #topo img{
+    height: 50px; 
+    width: 50px;
+}
+
+#closeLogin{
+    position: absolute;
+    left:100px;
+    top: 20px;
+   
+}
+
+#closeLogin img{
+    height: 50px; 
+    width: 50px;
+}
+
+#closeSingup{
+    position: absolute;
+    left:100px;
+    top: 20px;
+   
+}
+
+#closeSingup img{
     height: 50px; 
     width: 50px;
 }
@@ -167,6 +221,14 @@ body{
     padding: 10px 100px;
 }
 
+
+.frmSingupErro{
+    font-weight: 700;
+    color: #ff0000;
+
+}
+
+
 /*Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 header{
@@ -192,6 +254,39 @@ label{
     display: none;
 }
 
+#checkLogin{
+   display: none; 
+}
+#checkSingup{
+    display: none; 
+ }
+ 
+
+#divLogin{
+    position: fixed;
+    width: 600px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: -150%;
+    border: #000 2px solid;
+    transition: all 0.5s;
+    
+}
+
+
+#divSingup{
+    position: fixed;
+    width: 600px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: -150%;
+    border: #000 2px solid;
+    transition: all 0.5s;
+}
+
+nav{
+    margin-right: 20px
+}
 
 nav ul{
     list-style: none;
@@ -208,6 +303,15 @@ nav ul{
     right: 0;
 }
 
+
+#checkLogin:checked + div {
+    top: 0;
+}
+
+#checkSingup:checked + div {
+    top: 0;
+}
+
 nav ul li{
     padding: 20px;
 }
@@ -220,6 +324,7 @@ nav ul li a{
     text-decoration: none;
     color: #fff;
 }
+
 
 /* destaque */
 
@@ -393,6 +498,72 @@ footer a{
     margin: 20px 20px;
 }
 
+#singupButton{
+    height: 40px;
+    width: 180px;
+
+}
+
+.FrmSingup{
+    width: 400px;
+}
+
+
+
+#SingupInfo{
+    background: url(img/register2.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#SinginInfo{
+    background: url(img/register.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+#divLogin{
+
+    border-radius: 50px;
+}
+
+#divSingup{
+    border-radius: 50px;
+}
+
+#SinginInfo{
+    border-radius: 50px;
+}
+
+#SingupInfo{
+    border-radius: 50px;
+}
+
+#senctionSingup table{
+    margin-top: 30px;
+
+}
+
+#senctionSingup h2{
+    font-size: 2.5em;
+    color: #c1b2f7;
+    text-shadow: #000 0.08em 0.08em 0.15em;
+  
+
+}
+
+
+/* Login */
+
+
+
+
+
 /*Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 576px){
     /* Layout */
@@ -445,7 +616,14 @@ main h2{
     font-size: 2em;
 }
 
-
+#closeLogin{
+    left:30px;
+   
+}
+#closeSingup{
+    left:30px;
+   
+}
 
 }
 /*tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -458,6 +636,25 @@ main h2{
 /* destaque */
 main{
     height: 70vh;
+}
+
+.FrmSingup{
+    width: 500px;
+
+}
+
+.FrmSingup img {
+    height: 48px;
+    width: 48px;
+}
+
+.caixa1{
+    width: 498px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #66bbff;
+    border-radius: 5px;
 }
 
 
@@ -545,5 +742,14 @@ main{
         height: 255px;
     }
 
+    #SingupInfo{
+        height: 600px;
+
+    }
+
+    #SinginInfo{
+        height: 600px;
+
+    }
 
 }

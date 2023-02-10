@@ -12,11 +12,63 @@
       <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <input type="checkbox" id="checkLogin">
+    <div id="divLogin">
+        <a id="closeLogin"><img src="img/close.png"></a>
+        <section id="senctionSingup">
+            <div class="Conteiner Flex7" id="SinginInfo">
+                <h2 >Logar conta</h2>
+                <form name="frmLogin" action="singin" method="post" class="Conteiner FrmSingup">
+                    <table>
+                        <tr id="tdFrmSingup">
+                            <td><input type="text" name="nome" placeholder="Usuário" class="caixa1" id="frmSinginNome"><p class="frmSinginErro" id="frmSinginNomeErro"></p></td>
+                        </tr>
+                        <tr>
+                            <td><input type="password" name="senha" placeholder="Senha" class="caixa1" id="frmSinginSenha"><p class="frmSinginErro" id="frmSinginSenhaErro"></p></td>
+                        </tr>
+                    </table>
+                </form>
+                <div class="Conteiner">
+                    <input type="button" value="logar" class="botao1" id="singinButton" onclick="validar()">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <input type="checkbox" id="checkSingup">
+    <div id="divSingup">
+        <a id="closeSingup"><img src="img/close.png"></a>
+        <section id="senctionSingup">
+            <div class="Conteiner Flex7" id="SingupInfo">
+                <h2 >Registrar conta</h2>
+                <form name="frmSingup" action="singup" method="post" class="Conteiner FrmSingup">
+                    <table>
+                        <tr>
+                            <td><input type="text" name="nome" placeholder="Usuário 4-15" class="caixa1" id="frmSingupNome"><p class="frmSingupErro" id="frmSingupNomeErro"></p></td>
+                        </tr>
+                        <tr>
+                            <td><input type="password" name="senha" placeholder="Senha 8+" class="caixa1" id="frmSingupSenha"><p class="frmSingupErro" id="frmSingupSenhaErro"></p></td>
+                        </tr>
+                        <tr>
+                            <td><input type="password" name="cSenha" placeholder="Confirmar senha 8+" class="caixa1" id="frmSingupcSenha"><p class="frmSingupErro" id="frmSingupcSenhaErro"></p></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="email" placeholder="E-mail" class="caixa1" id="frmSingupEmail"><p class="frmSingupErro" id="frmSingupEmailErro"></p></td>
+                        </tr>
+                    </table>
+                </form>
+                <div class="Conteiner">
+                    <input type="button" value="Criar conta" class="botao2" id="singupButton" onclick="validarRegistro()">
+                </div>
+            </div>
+        </section>
+    </div>
+
     <!-- cabeçalho -->
     <header id="inicio">
         <div class="Conteiner Flex">
             <div id="logo">
-                <img src="img/logo.png" alt="hal 9000">
+                <img src="img/logo.png" alt="tera logo">
             </div>
             <nav>
                 <input type="checkbox" id="check">
@@ -27,8 +79,8 @@
                     <li><a href="#onepage">Quem somos?</a></li>
                     <li><a href="#conteudo">Conteúdo</a></li>
                     <li><a href="#wireframe">Download</a></li>
-                    <li class="botaoS"><a href="" class="botao1">Singin</a></li>
-                    <li class="botaoS"><a href="" class="botao2">Singup</a></li>
+                    <li class="botaoS"><a class="botao1" id="buttonLogin1">Singin</a></li>
+                    <li class="botaoS"><a class="botao2" id="buttonSingup1">Singup</a></li>
                 </ul>
             </nav>
         </div>
@@ -85,7 +137,7 @@
                            da América Latina.</p>
             </div>
             <div id="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/vjRNm_sOBLE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe id="iframeVideo" width="560" height="315" src="https://www.youtube.com/embed/vjRNm_sOBLE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
     </section>
@@ -184,5 +236,6 @@
         </div>
     </footer>
     <a href="#inicio" id="topo"><img src="img/top.png" alt="topo do site"></a>
+    <script src="index.js"></script>
 </body>
 </html>
